@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const config = require('config');
 
 /**
- * Create and debug connection to MongoDb
+ * Create connection to MongoDB
  * @returns {Promise<void>}
  */
 const dbConnection = async () => {
