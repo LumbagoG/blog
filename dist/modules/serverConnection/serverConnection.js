@@ -58,8 +58,7 @@ const app = (0, express_1.default)();
  * Get por and transfer to express
  */
 const port = (0, normalizePort_1.default)(
-  process.env.PORT || config_1.default.get("port")
-);
+    process.env.PORT || config_1.d'port'.get("port"));
 app.set("port", port);
 /**
  * Create server
@@ -72,8 +71,8 @@ const server = http_1.default.createServer(app);
 const serverConnection = () => __awaiter(void 0, void 0, void 0, function* () {
   try {
     server.listen(port, () => console.log(`Server started on port ${port}`));
-    'listening'listening", onListening_1.default);
-    'error'on("error", onError_1.default);
+    server.on('listening', onListening_1.default);
+    server.on('error', onError_1.default);
   } catch (e) {
     console.log(`Error: ${e}`);
   }

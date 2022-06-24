@@ -23,6 +23,3 @@ dbConnection
 
 // Routes
 app.use("/", indexRouter);
-
-// Export
-module.exports = app;
