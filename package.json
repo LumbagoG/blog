@@ -1,10 +1,11 @@
 {
   "name": "blogserver",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "start": "tsc && nodemon dist/app.js",
-    "test": "npm run test"
+    "test": "node --trace-warnings test.js"
   },
   "dependencies": {
     "-": "^0.0.1",
@@ -16,6 +17,7 @@
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.0",
     "morgan": "~1.10.0",
+    "node": "^18.4.0",
     "node-sass-middleware": "^1.0.1"
   },
   "devDependencies": {
