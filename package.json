@@ -1,9 +1,10 @@
 {
   "name": "blogserver",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "private": true,
   "scripts": {
+    "heroku": "node dist/app.js",
     "start": "tsc && nodemon dist/app.js",
     "test": "node --trace-warnings test.js"
   },
