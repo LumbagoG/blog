@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "tsc && nodemon dist/app.js",
-    "start": "node dist/app.js",
     "test": "node --trace-warnings test.js"
   },
   "dependencies": {
