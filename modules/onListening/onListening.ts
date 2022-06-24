@@ -27,7 +27,7 @@ const onListening = (): any => {
   const address = server.address();
 
   const bind =
-      typeof address === "string" ? "pipe " + address : "port " + address;
+    typeof address === "string" ? "pipe " + address : "port " + address;
   debug("Listening on " + bind);
 };
 
