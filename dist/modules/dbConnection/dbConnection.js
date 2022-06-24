@@ -22,10 +22,7 @@ const config_1 = __importDefault(require("config"));
  * @returns {Promise<void>}
  */
 const dbConnection = () => __awaiter(void 0, void 0, void 0, function* () {
-    yield mongoose_1.default.connect(config_1.default.get("mongoUri"), {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
+    yield mongoose_1.default.connect(config_1.default.get("mongoUri"));
 });
 exports.default = dbConnection();
 //# sourceMappingURL=dbConnection.js.map

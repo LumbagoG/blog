@@ -9,10 +9,7 @@ import config from "config";
  * @returns {Promise<void>}
  */
 const dbConnection = async () => {
-  await mongoose.connect(config.get("mongoUri"), {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(config.get("mongoUri"));
 };
 
 export default dbConnection();
