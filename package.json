@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "tsc && nodemon dist/app.js",
+    "dev": "tsc && nodemon dist/app.js",
     "start": "node dist/app.js",
     "test": "node --trace-warnings test.js"
   },
