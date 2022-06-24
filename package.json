@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsc && nodemon dist/app.js"
+    "start": "tsc && nodemon dist/app.js",
+    "test": "npm run test"
   },
   "dependencies": {
     "-": "^0.0.1",
