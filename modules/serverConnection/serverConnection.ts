@@ -6,13 +6,14 @@ import express from "express";
 import normalizePort from "../normalizePort/normalizePort";
 import onListening from "../onListening/onListening";
 import onError from "../onError/onError";
+import config from "config";
 
 const app = express();
 
 /**
  * Get por and transfer to express
  */
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || config.get("port"));
 app.set("port", port);
 
 /**

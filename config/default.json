@@ -1,3 +1,4 @@
 {
-  "mongoUri": "mongodb+srv://Lumbago:Gleb1iPad@cluster0.uhv6xlq.mongodb.net/?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://Lumbago:Gleb1iPad@cluster0.uhv6xlq.mongodb.net/?retryWrites=true&w=majority",
+  "port": "3000"
 }

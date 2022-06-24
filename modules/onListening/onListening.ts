@@ -5,6 +5,7 @@ import http from "http";
 import debug from "debug";
 import express from "express";
 import normalizePort from "../normalizePort/normalizePort";
+import config from "config";
 
 // App
 const app = express();
@@ -17,7 +18,7 @@ const server = http.createServer(app);
 /**
  * Get port from environment and store in Express.
  */
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || config.get("port"));
 app.set("port", port);
 
 /**

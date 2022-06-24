@@ -3,6 +3,7 @@
  */
 import express from "express";
 import normalizePort from "../normalizePort/normalizePort";
+import config from "config";
 
 // App
 const app = express();
@@ -10,7 +11,7 @@ const app = express();
 /**
  * Get port from environment and store in Express.
  */
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || config.get("port"));
 app.set("port", port);
 
 /**
