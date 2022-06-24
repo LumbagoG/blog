@@ -6,7 +6,7 @@ import dbConnection from "./modules/dbConnection/dbConnection";
 import serverConnection from "./modules/serverConnection/serverConnection";
 
 // Imports routes
-const indexRouter = require("../routes/index");
+import indexRouter from "./routes/index";
 
 // App
 const app = express();
