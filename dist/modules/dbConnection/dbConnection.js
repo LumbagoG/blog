@@ -42,7 +42,9 @@ var __importDefault =
     return mod && mod.__esModule ? mod : { default: mod };
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-// Imports
+/**
+ * Module dependencies.
+ */
 const mongoose_1 = __importDefault(require("mongoose"));
 const config_1 = __importDefault(require("config"));
 /**

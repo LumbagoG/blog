@@ -11,6 +11,7 @@ const debug_1 = __importDefault(require('debug'));
 const express_1 = __importDefault(require('express'));
 const normalizePort_1 = __importDefault(
     require('../normalizePort/normalizePort'));
+const config_1 = __importDefault(require('config'));
 // App
 const app = (0, express_1.default)();
 /**
@@ -20,7 +21,8 @@ const server = http_1.default.createServer(app);
 /**
  * Get port from environment and store in Express.
  */
-const port = (0, normalizePort_1.default)(process.env.PORT || '3000');
+const port = (0, normalizePort_1.default)(
+    process.env.PORT || config_1.default.get('port'));
 app.set('port', port);
 /**
  * Event listener for HTTP server "listening" event.
