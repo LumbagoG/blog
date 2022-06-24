@@ -1,11 +1,11 @@
 /**
  * Module dependencies.
  */
-const http = require("http");
-const express = require("express");
-const normalizePort = require("../normalizePort/normalizePort");
-const onListening = require("../onListening/onListening");
-const onError = require("../onError/onError");
+import http from "http";
+import express from "express";
+import normalizePort from "../normalizePort/normalizePort";
+import onListening from "../onListening/onListening";
+import onError from "../onError/onError";
 
 const app = express();
 
@@ -34,4 +34,4 @@ const serverConnection = async () => {
   }
 };
 
-module.exports = serverConnection();
+export default serverConnection();

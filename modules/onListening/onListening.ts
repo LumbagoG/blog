@@ -1,10 +1,10 @@
 /**
  * Module dependencies.
  */
-const http = require("http");
-const debug = require("debug")("observer:server");
-const express = require("express");
-const normalizePort = require("../normalizePort/normalizePort");
+import http from "http";
+import debug from "debug";
+import express from "express";
+import normalizePort from "../normalizePort/normalizePort";
 
 // App
 const app = express();
@@ -23,12 +23,12 @@ app.set("port", port);
 /**
  * Event listener for HTTP server "listening" event.
  */
-const onListening = () => {
+const onListening = (): any => {
   const address = server.address();
 
   const bind =
-    typeof address === "string" ? "pipe " + address : "port " + address;
+      typeof address === "string" ? "pipe " + address : "port " + address;
   debug("Listening on " + bind);
 };
 
-module.exports = onListening;
+export default onListening;

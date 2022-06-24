@@ -1,8 +1,8 @@
 /**
  * Module dependencies.
  */
-const express = require("express");
-const normalizePort = require("../normalizePort/normalizePort");
+import express from "express";
+import normalizePort from "../normalizePort/normalizePort";
 
 // App
 const app = express();
@@ -16,7 +16,7 @@ app.set("port", port);
 /**
  * Event listener for HTTP server "error" event.
  */
-const onError = (error) => {
+const onError = (error?: any): any => {
   if (error.syscall !== "listen") throw error;
 
   const bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
@@ -36,4 +36,4 @@ const onError = (error) => {
   }
 };
 
-module.exports = onError;
+export default onError;
