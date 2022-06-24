@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "heroku": "node dist/app.js",
-    "start": "tsc && nodemon dist/app.js",
+    "build": "tsc && nodemon dist/app.js",
+    "start": "node dist/app.js",
     "test": "node --trace-warnings test.js"
   },
   "dependencies": {
