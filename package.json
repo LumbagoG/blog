@@ -2,6 +2,7 @@
   "name": "blogserver",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "tsc && nodemon dist/app.js",
     "start": "node dist/app.js",
