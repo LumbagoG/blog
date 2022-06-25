@@ -2,10 +2,9 @@
   "name": "blogserver",
   "version": "0.0.1",
   "private": true,
-  "type": "commonjs",
   "scripts": {
     "dev": "tsc && nodemon dist/app.js",
-    "test": "node --trace-warnings test.js"
+    "test": "node --trace-warnings test.mjs"
   },
   "dependencies": {
     "-": "^0.0.1",
