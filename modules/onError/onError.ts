@@ -1,9 +1,9 @@
 /**
  * Module dependencies.
  */
-import express from "express";
-import normalizePort from "../normalizePort/normalizePort.mjs";
-import config from "config";
+import express = require("express");
+import config = require("config");
+import normalizePort from "../normalizePort/normalizePort.js";
 
 // App
 const app = express();

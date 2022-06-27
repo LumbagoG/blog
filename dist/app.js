@@ -1,26 +1,32 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Module dependencies.
  */
-const express_1 = __importDefault(require("express"));
-const dbConnection_1 = __importDefault(require("./modules/dbConnection/dbConnection"));
-const serverConnection_1 = __importDefault(require("./modules/serverConnection/serverConnection"));
+const express = require("express");
+const dbConnection_js_1 = __importDefault(
+  require("./modules/dbConnection/dbConnection.js")
+);
+const serverConnection_js_1 = __importDefault(
+  require("./modules/serverConnection/serverConnection.js")
+);
 // Imports routes
-const index_1 = __importDefault(require("./routes/index"));
+const index_js_1 = __importDefault(require("./routes/index.js"));
 // App
-const app = (0, express_1.default)();
+const app = express();
 // Connect to server
-serverConnection_1.default
-    .then(() => console.log("Server ok"))
-    .catch((err) => console.log(`Error server: ${err}`));
+serverConnection_js_1.default
+  .then(() => console.log("Server ok"))
+  .catch((err) => console.log(`Error server: ${err}`));
 // Connect to MongoDB
-dbConnection_1.default
-    .then(() => console.log("DB OK"))
-    .catch((err) => console.log(`DB FAIL: ${err}`));
+dbConnection_js_1.default
+  .then(() => console.log("DB OK"))
+  .catch((err) => console.log(`DB FAIL: ${err}`));
 // Routes
-app.use("/", index_1.default);
+ap'/'se("/", index_js_1.default);
 //# sourceMappingURL=app.js.map

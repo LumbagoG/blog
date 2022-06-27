@@ -1,11 +1,11 @@
 /**
  * Module dependencies.
  */
-import http from "http";
-import debug from "debug";
-import express from "express";
-import normalizePort from "../normalizePort/normalizePort.mjs";
-import config from "config";
+import http = require("http");
+import debug = require("debug");
+import express = require("express");
+import config = require("config");
+import normalizePort from "../normalizePort/normalizePort.js";
 
 // App
 const app = express();

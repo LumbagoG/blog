@@ -1,8 +1,8 @@
 /**
  * Module dependencies.
  */
-import mongoose from "mongoose";
-import config from "config";
+import mongoose = require("mongoose");
+import config = require("config");
 
 /**
  * Create connection to MongoDB

@@ -1,5 +1,5 @@
 // Imports modules
-import express from "express";
+import express = require("express");
 
 const router = express.Router();
 

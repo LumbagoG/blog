@@ -1,21 +1,23 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+'use strict';
+var __importDefault = (this && this.__importDefault) || function(mod) {
+  return (mod && mod.__esModule) ? mod : {'default': mod};
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, '__esModule', {value: true});
 /**
  * Module dependencies.
  */
-const express_1 = __importDefault(require("express"));
-const normalizePort_1 = __importDefault(require("../normalizePort/normalizePort"));
-const config_1 = __importDefault(require("config"));
+const express = require('express');
+const config = require('config');
+const normalizePort_js_1 = __importDefault(
+    require('../normalizePort/normalizePort.js'));
 // App
-const app = (0, express_1.default)();
+const app = express();
 /**
  * Get port from environment and store in Express.
  */
-const port = (0, normalizePort_1.default)(process.env.PORT || config_1.default.get("port"));
-app.set("port", port);
+const port = (0, normalizePort_js_1.default)(
+    process.env.PORT || config.get('port'));
+app.set('port', port);
 /**
  * Event listener for HTTP server "error" event.
  */

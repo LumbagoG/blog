@@ -1,12 +1,12 @@
 /**
  * Module dependencies.
  */
-import express from "express";
-import dbConnection from "./modules/dbConnection/dbConnection.mjs";
-import serverConnection from "./modules/serverConnection/serverConnection.mjs";
+import express = require("express");
+import dbConnection from "./modules/dbConnection/dbConnection.js";
+import serverConnection from "./modules/serverConnection/serverConnection.js";
 
 // Imports routes
-import indexRouter from "./routes/index.mjs";
+import indexRouter from "./routes/index.js";
 
 // App
 const app = express();

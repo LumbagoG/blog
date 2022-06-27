@@ -1,12 +1,12 @@
 /**
  * Module dependencies.
  */
-import http from "http";
-import express from "express";
-import normalizePort from "../normalizePort/normalizePort.mjs";
-import onListening from "../onListening/onListening.mjs";
-import onError from "../onError/onError.mjs";
-import config from "config";
+import http = require("http");
+import express = require("express");
+import config = require("config");
+import normalizePort from "../normalizePort/normalizePort.js";
+import onListening from "../onListening/onListening.js";
+import onError from "../onError/onError.js";
 
 const app = express();
 
