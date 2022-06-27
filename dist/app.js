@@ -28,5 +28,5 @@ dbConnection_js_1.default
   .then(() => console.log("DB OK"))
   .catch((err) => console.log(`DB FAIL: ${err}`));
 // Routes
-ap'/'se("/", index_js_1.default);
+app.set("/", index_js_1.default);
 //# sourceMappingURL=app.js.map

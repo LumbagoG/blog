@@ -32,9 +32,10 @@ app.set("port", port);
  * Event listener for HTTP server "listening" event.
  */
 const onListening = () => {
-    const address = server.address();
-    const bind = typeof address === "string" ? "pipe " + address : "port " + address;
- 'Listening on 'ng on " + bind);
+  const address = server.address();
+  const bind =
+    typeof address === "string" ? "pipe " + address : "port " + address;
+  debug("Listening on" + bind);
 };
 exports.default = onListening;
 //# sourceMappingURL=onListening.js.map

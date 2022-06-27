@@ -13,7 +13,7 @@ const app = express();
 
 // Connect to server
 serverConnection
-    .then(() => console.log("Server ok"))
+  .then(() => console.log("Server ok"))
   .catch((err: any) => console.log(`Error server: ${err}`));
 
 // Connect to MongoDB
