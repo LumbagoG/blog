@@ -5,10 +5,10 @@ import { Server } from "http";
  * @returns {Promise<void>}
  */
 export default async function serverConnection(
-    server: Server,
-    port: any,
-    onListening: () => any,
-    onError: (error?: any) => any
+  server: Server,
+  port: any,
+  onListening: () => any,
+  onError: (error?: any) => any
 ) {
   try {
     server.listen(port, () => console.log(`Server started on port ${port}`));

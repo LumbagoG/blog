@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-import {Application} from "express";
+import { Application } from "express";
 import normalizePort from "../normalizePort/normalizePort.js";
 import config from "config";
 

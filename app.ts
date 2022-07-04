@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-import {Application} from "express";
+import { Application } from "express";
 import serverConnection from "./modules/serverConnection/serverConnection";
 import config from "config";
 import * as http from "http";
@@ -9,7 +9,7 @@ import onListening from "./modules/onListening/onListening";
 import indexRouter from "./routes/index";
 import normalizePort from "./modules/normalizePort/normalizePort";
 import onError from "./modules/onError/onError";
-import {dbConnection} from "./modules/dbConnection/dbConnection";
+import { dbConnection } from "./modules/dbConnection/dbConnection";
 
 // Express
 const express = require("express");

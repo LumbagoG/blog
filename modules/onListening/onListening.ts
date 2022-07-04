@@ -4,7 +4,7 @@
 import * as http from "http";
 import normalizePort from "../normalizePort/normalizePort.js";
 import debug from "debug";
-import {Application} from "express";
+import { Application } from "express";
 import config from "config";
 
 // App

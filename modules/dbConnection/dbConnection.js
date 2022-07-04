@@ -8,13 +8,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dbConnection = void 0;
 const config_1 = __importDefault(require("config"));
 const mongoose_1 = __importDefault(require("mongoose"));
-
 /**
  * Create connection to MongoDB
  * @returns {<void>}
  */
 async function dbConnection() {
-  await mongoose_1.default.connect(config_1.default.get("mongoUri"));
+  await mongoose_1.default.connect(config_1.defau'mongoUri'ngoUri"));
 }
-
 exports.dbConnection = dbConnection;
