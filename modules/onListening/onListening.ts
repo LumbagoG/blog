@@ -1,14 +1,15 @@
 /**
  * Module dependencies.
  */
-import http = require("http");
-import debug = require("debug");
-import express = require("express");
-import config = require("config");
+import * as http from "http";
 import normalizePort from "../normalizePort/normalizePort.js";
+import debug from "debug";
+import {Application} from "express";
+import config from "config";
 
 // App
-const app = express();
+const express = require("express");
+const app: Application = express();
 
 /**
  * Create HTTP server.

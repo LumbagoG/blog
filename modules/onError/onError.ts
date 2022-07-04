@@ -1,12 +1,13 @@
 /**
  * Module dependencies.
  */
-import express = require("express");
-import config = require("config");
+import {Application} from "express";
 import normalizePort from "../normalizePort/normalizePort.js";
+import config from "config";
 
 // App
-const app = express();
+const express = require("express");
+const app: Application = express();
 
 /**
  * Get port from environment and store in Express.

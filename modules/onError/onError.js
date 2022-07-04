@@ -1,25 +1,25 @@
 "use strict";
-exports.__esModule = true;
-/**
- * Module dependencies.
- */
-var express = require("express");
-var config = require("config");
-var normalizePort_js_1 = require("../normalizePort/normalizePort.js");
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const normalizePort_js_1 = __importDefault(require("../normalizePort/normalizePort.js"));
+const config_1 = __importDefault(require("config"));
 // App
-var app = express();
+const express = require("express");
+const app = express();
 /**
  * Get port from environment and store in Express.
  */
-var port = (0, normalizePort_js_1["default"])(process.env.PORT || config.get("port"));
+const port = (0, normalizePort_js_1.default)(process.env.PORT || config_1.default.get("port"));
 app.set("port", port);
 /**
  * Event listener for HTTP server "error" event.
  */
-var onError = function (error) {
+const onError = (error) => {
     if (error.syscall !== "listen")
         throw error;
-    var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+    const bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
     // handle specific listen errors with friendly messages
     switch (error.code) {
         case "EACCES":
@@ -34,4 +34,4 @@ var onError = function (error) {
             throw error;
     }
 };
-exports["default"] = onError;
+exports.default = onError;

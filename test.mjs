@@ -1,6 +1,6 @@
-import test from "node:test";
-import * as assert from "assert";
+import test from 'node:test';
+import * as assert from 'assert';
 
-test("test", (t) => {
+test('test', (t) => {
   assert.strictEqual(1, 1);
 });

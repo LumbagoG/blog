@@ -1,1 +1,1 @@
-web: node --trace-warnings ./dist/app.js
+web: node ./app.js

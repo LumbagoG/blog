@@ -1,15 +1,10 @@
-/**
- * Module dependencies.
- */
-import mongoose = require("mongoose");
-import config = require("config");
+import config from "config";
+import mongoose from "mongoose";
 
 /**
  * Create connection to MongoDB
- * @returns {Promise<void>}
+ * @returns {<void>}
  */
-const dbConnection = async () => {
+export async function dbConnection() {
   await mongoose.connect(config.get("mongoUri"));
-};
-
-export default dbConnection();
+}
