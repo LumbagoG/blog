@@ -26,6 +26,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Module dependencies.
+ */
+const express_1 = __importDefault(require("express"));
 const serverConnection_1 = __importDefault(require("./modules/serverConnection/serverConnection"));
 const config_1 = __importDefault(require("config"));
 const http = __importStar(require("http"));
@@ -35,9 +39,9 @@ const normalizePort_1 = __importDefault(require("./modules/normalizePort/normali
 const onError_1 = __importDefault(require("./modules/onError/onError"));
 const dbConnection_1 = require("./modules/dbConnection/dbConnection");
 // Express
-const express = require("express");
+// const express = require("express");
 // App
-const app = express();
+const app = (0, express_1.default)();
 const server = http.createServer(app);
 const port = (0, normalizePort_1.default)(process.env.PORT || config_1.default.get("port"));
 app.set("port", port);
